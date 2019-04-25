@@ -1,20 +1,19 @@
 <template>
   <div id="app">
-    <NavBar/>
-    <MainSite/>
+    <Navbar/>
     <router-view/>
+    <Sidebar/>
   </div>
 </template>
 
 <script>
-import NavBar from '@/components/NavBar.vue'
-import MainSite from '@/components/MainSite.vue'
-
+import Sidebar from '@/components/Sidebar.vue'
+import Navbar from '@/components/Navbar.vue'
 
 export default {
   components: {
-    NavBar,
-    MainSite
+    Navbar,
+    Sidebar
   }
 }
 </script>
@@ -33,9 +32,8 @@ body {
 }
 #app {
   box-sizing: border-box;
-  width: 100%;;
+  width: 100%;
   padding: 0px;
-  border: 1px red solid;
 }
 hr {
   box-sizing: content-box;
@@ -242,5 +240,13 @@ select:focus::ms-value {
 }
 select::ms-expand {
   opacity: 0;
+}
+
+#app {
+  display: grid;
+  grid-template-areas: 'nav main sidebar';
+  grid-template-columns: 320px 8fr 320px;
+  grid-column-gap: 20px;
+  background-color: #d0d3d8;
 }
 </style>
