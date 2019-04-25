@@ -45,5 +45,23 @@
         "time": "1:00",
         "attendees": []
       }
+    ],
+    "accounts": [
+      {
+        "id": 5928101,
+        "name": "CIC",
+        "category": "Courant",
+        "description": "Compte courant CIC",
+        "currency": "€",
+        "amount": "1452,41"
+      },
+      {
+        "id": 4216872,
+        "name": "Revolut",
+        "category": "Annexe",
+        "description": "Compte pour dépenses loisir",
+        "currency": "€",
+        "amount": "985,78"
+      }
     ]
   }
